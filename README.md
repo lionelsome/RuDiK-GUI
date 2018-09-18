@@ -6,6 +6,7 @@ The following GUI is a <a href="https://www.dropwizard.io/1.3.5/docs/">Dropwizar
 
 ## Getting started
 These instructions will get you a copy of the project up and running on your local machine for testing purposes.
+Please note that some browsers like ```Mozilla Firefox``` and ```Microsoft Edge``` do not support the tools used to build the GUI. Therefore, to have a good experience with this verison of the GUI, please use Google Chrome.
 
 ### STEP 1: 
 Clone the git project: ```git clone https://github.com/lionelsome/RuDiK-GUI.git```;
@@ -22,7 +23,7 @@ The following Web application works primarily with Virtuoso installed locally an
 ### STEP 4: 
 Compile and laugh the application. Inside the project folder run:
 ```java -jar target/rule_miner-0.0.1-SNAPSHOT.jar server rudik.yml``` where rudik.yml is the application’s configuration file. 
-In your web browser, go to “localhost:9090/rudik” and start the adventure with Rudik!
+In your web browser, go to ```localhost:9090/rudik``` and start the adventure with Rudik!
 
 ## How to use it ?
 
