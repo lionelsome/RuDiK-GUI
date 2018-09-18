@@ -6,7 +6,7 @@ The following GUI is a <a href="https://www.dropwizard.io/1.3.5/docs/">Dropwizar
 
 ## Getting started
 These instructions will get you a copy of the project up and running on your local machine for testing purposes.
-Please note that some browsers like ```Mozilla Firefox``` and ```Microsoft Edge``` do not support the tools used to build the GUI. Therefore, to have a good experience with this verison of the GUI, please use Google Chrome.
+Please note that some browsers like ```Mozilla Firefox``` and ```Microsoft Edge``` do not support the tools used to build the GUI. Therefore, to have a good experience with this verison of the GUI, please use ```Google Chrome```.
 
 ### STEP 1: 
 Clone the git project: ```git clone https://github.com/lionelsome/RuDiK-GUI.git```;
