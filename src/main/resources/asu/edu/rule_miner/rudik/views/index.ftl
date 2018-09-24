@@ -160,8 +160,8 @@
 " data-placement="top" title="The Knowledge Graph where to look for rules">Knowledge graph </label>
                 <div class="col-sm-5">
                     <select class="form-control" id="KG" name="kg" required>
-                        <option  value="">Choose...</option>
-                        <option selected value="dbpedia">dbpedia</option>
+                        <option selected value="">Choose...</option>
+                        <option value="dbpedia">dbpedia</option>
                         <option value="yago">yago</option>
 
                     </select>
