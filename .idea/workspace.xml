@@ -1,32 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c55cbb55-a6b0-43ba-b263-af9b995e9279" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/util/annotations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rule_miner.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/rudikUI/DiscoverNewRules.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/rudikUI/UIMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allRulesDbpedia.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rudik_experiments.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/config/Configuration.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/config/Configuration.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/config/DbpediaConfiguration.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/config/FreebaseConfiguration.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/config/WikidataConfiguration.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/config/YagoConfiguration.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/config/YagoConfiguration.xml" afterDir="false" />
+    <list default="true" id="1bd22772-465d-41bf-8366-17fc23f4a8f2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/target.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule_miner.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/api/RudikApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/api/RudikApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/configuration/ConfigurationFacility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/configuration/ConfigurationFacility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/rule_generator/DynamicPruningRuleDiscovery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/rule_generator/DynamicPruningRuleDiscovery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/rule_generator/HornRuleDiscovery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/rule_generator/HornRuleDiscovery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/rule_generator/HornRuleDiscoveryInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/rule_generator/HornRuleDiscoveryInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/sparql/SparqlExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/sparql/SparqlExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/sparql/jena/QueryJenaLibrary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/sparql/jena/QueryJenaLibrary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/asu/edu/rule_miner/rudik/configuration/Configuration.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/asu/edu/rule_miner/rudik/configuration/Configuration.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/resources/DiscoverRulesResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/resources/DiscoverRulesResource.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,57 +18,82 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FUSProjectUsageTrigger">
-    <session id="781230931">
+    <session id="-1186900408">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.6" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="ftl" value="1" />
+          <entry key="java" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="FTL" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="ftl" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="FTL" value="2" />
+          <entry key="JAVA" value="5" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/asu/edu/rule_miner/rudik/views/sankeyDiag.ftl">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/rule_generator/DynamicPruningRuleDiscovery.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="136">
+              <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/rule_generator/examples_sampling/VariancePopularSampling.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2561">
+              <caret line="125" column="47" selection-start-column="57" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/api/RudikApi.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/rudikUI/DiscoverNewRules.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-745">
+              <caret line="103" column="24" selection-start-line="103" selection-start-column="24" selection-end-line="103" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/resources/DiscoverRulesResource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="291">
+              <caret line="82" column="53" selection-start-line="82" selection-start-column="53" selection-end-line="82" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>sampling</find>
+      <find>samp</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/resources/asu/edu/rule_miner/rudik/views/sankeyDiag.ftl" />
-      </list>
-    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -92,9 +101,8 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
@@ -105,80 +113,97 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="RudikGUI_latest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rule_miner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RuDiK-GUI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rule_miner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RuDiK-GUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rule_miner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RuDiK-GUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="RudikGUI_latest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rule_miner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RuDiK-GUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="RudikGUI_latest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rule_miner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RuDiK-GUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="rudik" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="RudikGUI_latest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rule_miner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RuDiK-GUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RudikGUI_latest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="asu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RudikGUI_latest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="asu" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RudikGUI_latest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="asu" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="rule_miner" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RudikGUI_latest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="asu" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="rule_miner" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="rudik" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="RudikGUI_latest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rule_miner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RuDiK-GUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="asu" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="rule_miner" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="rudik" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rule_miner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RuDiK-GUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rudik" type="462c0819:PsiDirectoryNode" />
+              <item name="rudikUI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rule_miner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RuDiK-GUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rudik" type="462c0819:PsiDirectoryNode" />
+              <item name="rule_generator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rule_miner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RuDiK-GUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rudik" type="462c0819:PsiDirectoryNode" />
+              <item name="rule_generator" type="462c0819:PsiDirectoryNode" />
+              <item name="examples_sampling" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537965330916" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -195,9 +220,9 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="RudikApp" type="Application" factoryName="Application">
+    <configuration name="Rudik App" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="asu.edu.rule_miner.rudik.RudikApplication" />
-      <module name="main" />
+      <module name="rule_miner" />
       <option name="PROGRAM_PARAMETERS" value="server rudik.yml" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -209,20 +234,20 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c55cbb55-a6b0-43ba-b263-af9b995e9279" name="Default Changelist" comment="" />
-      <created>1535451104218</created>
+      <changelist id="1bd22772-465d-41bf-8366-17fc23f4a8f2" name="Default Changelist" comment="" />
+      <created>1537964425406</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1535451104218</updated>
-      <workItem from="1535451109255" duration="1798000" />
+      <updated>1537964425406</updated>
+      <workItem from="1537964430243" duration="881000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1798000" />
+    <option name="totallyTimeSpent" value="881000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" />
@@ -230,7 +255,7 @@
       <window_info id="UI Designer" />
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Capture Tool" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.120272316" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
@@ -239,9 +264,9 @@
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.3295082" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.25737706" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -264,10 +289,38 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/asu/edu/rule_miner/rudik/views/sankeyDiag.ftl">
+    <entry file="file://$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/rule_generator/DynamicPruningRuleDiscovery.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="136">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/rule_generator/examples_sampling/VariancePopularSampling.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2561">
+          <caret line="125" column="47" selection-start-column="57" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/resources/DiscoverRulesResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="82" column="53" selection-start-line="82" selection-start-column="53" selection-end-line="82" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/rudikUI/DiscoverNewRules.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-745">
+          <caret line="103" column="24" selection-start-line="103" selection-start-column="24" selection-end-line="103" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/api/RudikApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
         </state>
       </provider>
     </entry>
