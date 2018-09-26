@@ -61,7 +61,7 @@ public class RudikApiUsage {
     // like this we can compute positive rules giving a target predicate - target predicate must contain the full name
     final String targetPredicate = "http://dbpedia.org/ontology/spouse";
     // use discoverNegativeRules to discover negative rules
-    final RudikResult result = API.discoverPositiveRules(targetPredicate);
+    final RudikResult result = API.discoverPositiveRules(targetPredicate,20,20);
 
     // The following shows how to inspect the result
     // iterate all over discovered results
