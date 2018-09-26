@@ -39,12 +39,12 @@ public class DiscoverNewRules {
 
     private Map<String, List<String>> val_examples_dict;
 
-    public DiscoverNewRules(String endpoint, int maxInst, int timeout) {
+    public DiscoverNewRules(String endpoint, int maxInst, int timeout, float alpha, float beta, float gamma,String sampling) {
         String filepath;
         if ("dbpedia".equals(endpoint)) {
             filepath= "src/main/config/Configuration.xml";
         } else {filepath="src/main/config/YagoConfiguration.xml"; }
-        API = new RudikApi(filepath, timeout);
+        API = new RudikApi(filepath, timeout, alpha, beta, gamma, sampling);
         // set the max number of instantiated facts to generate when executing rules against the KB
         API.setMaxInstantiationNumber(maxInst);
         gen_examples_dict = new HashMap<>();
@@ -101,7 +101,7 @@ public class DiscoverNewRules {
         //Assert.assertEquals(max_rule_length, ConfigurationFacility.getConfiguration().getInt(Constant.CONF_MAX_RULE_LEN));
     }
 
-    public List<String> discoverRules(String kg, String rulesType, String predicate){
+    public List<String> discoverRules(String kg, String rulesType, String predicate, int nb_posEx, int nb_negEx){
 
         final String targetPredicate;
         final RudikResult result;
@@ -117,12 +117,12 @@ public class DiscoverNewRules {
 
         if ("pos".equals(rulesType)){
             // use discoverNegativeRules to discover negative rules
-            result = API.discoverPositiveRules(targetPredicate);
+            result = API.discoverPositiveRules(targetPredicate,nb_posEx,nb_negEx);
             //save the predicate to be used in /surrounding-graph
             this.predicate=predicate;
         }
         else {
-            result = API.discoverNegativeRules(targetPredicate);
+            result = API.discoverNegativeRules(targetPredicate,nb_posEx,nb_negEx);
             //save the predicate to be used in /surrounding-graph
             this.predicate="not "+predicate;
         }
@@ -247,85 +247,7 @@ public class DiscoverNewRules {
             source="from";
             target="to";
             List<List<String>> result = createNodesAndEdgesGraph(entities, surroundingGraph, ruleAtoms, "examples");
-        /*int i;
-        int j;
-        List nodes_list= new LinkedList();
-        List edges_list = new LinkedList();
-        List<List> result= new ArrayList<List>();
-        String color;
-        //j is the subject or object id that is always 0 or 1. It's used to create the edge between the subject/object
-        if (type.equals("subject")) {
-            i=2;
-            j=0;
-            color="#00aeff";
-        } else {
-            i=3;
-            j=1;
-            color="#90fc3b";
-        }
-        //list of nodes we want to be added
-        List<String> nodesToAdd = new ArrayList<String>(Arrays.asList("publisher","birthDate","birthPlace", "deathDate", "deathPlace", "parent", "spouse", "successor", "predecessor", "religion", "relative", "child", "founder", "founders","locationCountry", "author", "knownFor", "foundationPlace" ));
-        //store the relations already added
-        List<String> relationsAdded = new ArrayList<String>();
-        //add the predicate that will be added later on
-        relationsAdded.add(predicate);
-        //add the literal type
-        final List<String> literal_types = new ArrayList<String>();
-        literal_types.addAll(surroundingGraph.getTypes(literal));
-        //the type should start with the target relation prefix (http://dbpedia.org/ontology/ in case of DBPedia), and maybe among those do not take the most generic type (http://dbpedia.org/ontology/Agent in case of DBPedia)
-        for (int l = 0; l<literal_types.size(); l++){
-
-            if (literal_types.get(l).contains(getOntologyPrefix()) & !literal_types.get(l).equals(getMostGenericType()))
-            {
-                nodes_list.add(createNode(literal_types.get(l), i += 2, j, color));
-                edges_list.add(createEdge("type", j, i));
-            }
-        }
-        //get the neighbours
-        final Set<Edge<String>> allEdges = surroundingGraph.getNeighbours(literal);
-
-
-        // iterate over all subject edges
-        if (allEdges != null) {
-            for (final Edge<String> oneEdge : allEdges) {
-    //add only the nodes that are in the list of desired nodes and that have not been added yet.
-                    if (isInList(nodesToAdd, oneEdge.getLabel()) & !isInList(relationsAdded, oneEdge.getLabel()) ) {
-
-                        //add the label in the list of the labels already added
-                        relationsAdded.add(oneEdge.getLabel());
-                        // create the node for the nodeStart
-                        //if the actual literal is the node end and the other literal is not the start then the edge is oriented from j to i
-                        //and we only add the other node which is not yet present
-                        if (literal.equals(oneEdge.getNodeEnd()) & !otherLiteral.equals(oneEdge.getNodeStart())) {
-
-
-                            //remove the prefix
-
-                            nodes_list.add(createNode(oneEdge.getNodeStart(), i += 2, j, color));
-
-                            edges_list.add(createEdge(oneEdge.getLabel(), j, i));
-                        }
-                     else if (literal.equals(oneEdge.getNodeEnd()) & otherLiteral.equals(oneEdge.getNodeStart()) & type.equals("subject")) {
-                        //if j is 0 then the target should be 1 and vice versa -> j+1 mod 2
-                        edges_list.add(createEdge(oneEdge.getLabel(), j, (j + 1) % 2));
-                    }
-
-                    //if the actual literal is the node start and the other literal is not the end then the edge is oriented from i to j
-                    else if (literal.equals(oneEdge.getNodeStart()) & !otherLiteral.equals(oneEdge.getNodeEnd())) {
-                        //create the node for the nodeEnd
-
-                            nodes_list.add(createNode(oneEdge.getNodeEnd(), i += 2, j, color));
-                            edges_list.add(createEdge(oneEdge.getLabel(), i, j));
-                        }
-                       // If source and target are the examples node treat it separately; Also do it only for the subject to avoid duplicates if it's also done for object
-                     else if (literal.equals(oneEdge.getNodeStart()) & otherLiteral.equals(oneEdge.getNodeEnd()) & type.equals("subject")) {
-                        //if j is 0 then the target should be 1 and vice versa -> j+1 mod 2
-                        edges_list.add(createEdge(oneEdge.getLabel(), (j + 1) % 2, j));
-                    }
-            }
-        }
-        }*/
-
+        
         return result;
     }
 
@@ -351,30 +273,7 @@ public class DiscoverNewRules {
         entities.add(subject);
         entities.add(object);
         final Graph<String> sorroundingGraph = API.generateGraph(entities);
-        /*
-        List nodes_list= new LinkedList();
-        List edges_list = new LinkedList();
-        JSONObject result = new JSONObject();
-
-        //construction of the graph for subject and object
-        nodes_list.add(createNode(subject_withoutPrefix, 0, 0, "#ff0b0b"));
-
-        //construction of node for object
-
-        nodes_list.add(createNode(object_withoutPrefix, 1, 1, "#ff0b0b"));
-
-        edges_list.add(createEdge(predicate, 1, 0));
-        //add the nodes and edges for subject
-        List<List> subject_graph=createGraph(sorroundingGraph, "subject", subject, object);	   //add the nodes in nodes_list and edges in edges_list
-        nodes_list.addAll(subject_graph.get(0));
-        edges_list.addAll(subject_graph.get(1));
-
-        //add the nodes and edges for object
-        List<List> object_graph=createGraph(sorroundingGraph, "object", object,subject);
-        //add the nodes in nodes_list and edges in edges_list
-        nodes_list.addAll(object_graph.get(0));
-        edges_list.addAll(object_graph.get(1));
-            */
+    
         //create the resulting json variable
         JSONObject result = new JSONObject();
         result.put("nodes", createNodesAndEdgesGraph(entities, sorroundingGraph, ruleAtoms, "examples").get(0));

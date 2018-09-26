@@ -57,19 +57,21 @@ public class DiscoverRulesResource {
     @GET
     @Timed
 public DiscoverRulesView discoverNewRules(@QueryParam("rulesType") String rulesType,
- 					  @QueryParam("predicate") String predicate,
-					  @QueryParam("kg") String kg,
- 					  @QueryParam("alpha") String alphaS,
+                      @QueryParam("predicate") String predicate,
+                      @QueryParam("kg") String kg,
+                      @QueryParam("alpha") String alphaS,
+                      @QueryParam("gamma") String gammaS,
                       @QueryParam("endpoint") String endpoint,
-					  @QueryParam("nb_pos") String nb_posS,
-					  @QueryParam("nb_neg") String nb_negS,
-					  @QueryParam("sub_edges") String sub_edgesS,
+                      @QueryParam("nb_pos") String nb_posS,
+                      @QueryParam("nb_neg") String nb_negS,
+                      @QueryParam("sub_edges") String sub_edgesS,
                       @QueryParam("obj_edges") String obj_edgesS,
-					  @QueryParam("max_rule_length") String max_rule_lengthS,
-                      @QueryParam("includeLiterals") String includeLiteralsS) {
+                      @QueryParam("max_rule_length") String max_rule_lengthS,
+                      @QueryParam("includeLiterals") String includeLiteralsS,
+                      @QueryParam("sampling") String sampling) {
 
-        //launching the API for the specific knowlegde graph with a maximum number of 10 instantiations and 20 secs of timeout
-        final DiscoverNewRules functions = new DiscoverNewRules(kg, 10, 20);
+        //launching the API for the specific knowlegde graph with a maximum number of 10 instantiations and 5 mins of timeout
+        final DiscoverNewRules functions = new DiscoverNewRules(kg, 10, 5*60, Float.valueOf(alphaS),1-Float.valueOf(alphaS),Float.valueOf(gammaS),sampling);
         //update the config file by setting the new parameters values
         functions.setConfigurationParameters(alphaS, nb_posS, nb_negS, max_rule_lengthS, sub_edgesS, obj_edgesS, endpoint, includeLiteralsS);
 
@@ -80,14 +82,14 @@ public DiscoverRulesView discoverNewRules(@QueryParam("rulesType") String rulesT
         this.predicate=functions.getPredicate();
         rulesAtomsDict=functions.getRulesAtomsDict();
 
-        return new DiscoverRulesView(functions.discoverRules(kg, rulesType, predicate), kg, endpoint);
+        return new DiscoverRulesView(functions.discoverRules(kg, rulesType, predicate,Integer.valueOf(nb_posS),Integer.valueOf(nb_negS)), kg, endpoint);
  }
 
 @GET 
 @Path("/examples")
 //@Produces(MediaType.APPLICATION_JSON)
 public ExamplesView getExamples(@QueryParam("instantiatedRule") String rule) {
-	Map<String,List<String>> gen_examples=   this.gen_examples_dict;
+    Map<String,List<String>> gen_examples=   this.gen_examples_dict;
         Map<String, List<String>> val_examples=this.val_examples_dict;
          
          return new ExamplesView(gen_examples.get(rule), val_examples.get(rule), rule);
@@ -99,12 +101,12 @@ public ExamplesView getExamples(@QueryParam("instantiatedRule") String rule) {
 public SankeyDiagView showDiag() {
         Map<String,List<String>> gen_examples= this.gen_examples_dict;
         Map<String, List<String>> val_examples=this.val_examples_dict;
-	List<List> gen_exampleSankey;
-	List <List> val_exampleSankey;
+    List<List> gen_exampleSankey;
+    List <List> val_exampleSankey;
 
     //construct the arrays from the dicts
-	gen_exampleSankey=UIMethods.constructSankeyArray(gen_examples);
-	val_exampleSankey=UIMethods.constructSankeyArray(val_examples);
+    gen_exampleSankey=UIMethods.constructSankeyArray(gen_examples);
+    val_exampleSankey=UIMethods.constructSankeyArray(val_examples);
 
          return new SankeyDiagView(gen_exampleSankey.toString(), val_exampleSankey.toString());
         }
@@ -121,12 +123,12 @@ private String target;
 public GraphView surroundingGraph (@QueryParam("example") String example, @QueryParam("instantiatedRule") String instantiatedRule) throws java.io.IOException {
 
         //graph_framework can either be "vis" or "alchemy"
-	String graph_framework="vis";
+    String graph_framework="vis";
     //List<String> entitiesList= Arrays.asList(example.split(";"));
     //final Graph<String> surroundingGraph = API.generateGraph(entitiesList);
     String jsonGraph = DiscoverNewRules.createJsonGraph(example, rulesAtomsDict.get(instantiatedRule));
-	if (graph_framework.equals("alchemy")){	return new GraphView(jsonGraph, example);}
+    if (graph_framework.equals("alchemy")){ return new GraphView(jsonGraph, example);}
         else {return new GraphView(jsonGraph, example, instantiatedRule);}
            }
 
-	}
+    }
