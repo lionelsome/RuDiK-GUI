@@ -35,7 +35,8 @@
     <script type="text/javascript">
     function reloadOnPreviousPageButton() {
         if (performance.navigation.type == 2) {
-            location.reload(true);
+            //location.reload(true);
+            document.getElementById("overlay").style.display = "none";
         }
     }
     </script>
@@ -434,7 +435,7 @@ $(document).ready(function() {
         var val = $(this).val();
         if (val == "dbpedia") {
 
-            $("#rule_test").html(" <option value='' selected>Select a rule for dbpedia...</option><option>parent(v0,subject) & parent(v0,object) => spouse(subject,object)</option><option>birthDate(v0,subject) & deathDate(v1,object) & >(v0,v1) => not spouse(subject,object)</option><option>foundingYear(subject,v0) & birthDate(object,v1) & >(v0,v1) => not foundedBy(subject,object)</option><option>spouse(subject,http://dbpedia.org/resource/Barbara_Henrickson) & child(object,http://dbpedia.org/resource/Barbara_Henrickson) => spouse(subject,object)</option>");
+            $("#rule_test").html(" <option value='' selected>Select a rule for dbpedia...</option><option>parent(v0,subject) & parent(v0,object) => spouse(subject,object)</option><option>birthDate(subject,v0) & deathDate(object,v1) & >(v0,v1) => not spouse(subject,object)</option><option>foundingYear(subject,v0) & birthDate(object,v1) & >(v0,v1) => not foundedBy(subject,object)</option><option>spouse(subject,http://dbpedia.org/resource/Barbara_Henrickson) & child(object,http://dbpedia.org/resource/Barbara_Henrickson) => spouse(subject,object)</option>");
         } else if (val == "yago") {
             $("#rule_test").html(" <option value='' selected>Select a rule for yago...</option><option>isLeaderOf(v0,object) & isLeaderOf(v0,v1) & isLeaderOf(subject,v1) => isLeaderOf(subject,object)</option><option>hasChild(subject,v0) & hasChild(object,v0) => isMarriedTo(subject,object)</option>");
 

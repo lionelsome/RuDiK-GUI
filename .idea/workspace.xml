@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1bd22772-465d-41bf-8366-17fc23f4a8f2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/api/RudikApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/api/RudikApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/rule_generator/DynamicPruningRuleDiscovery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/rule_generator/DynamicPruningRuleDiscovery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/rule_generator/examples_sampling/VariancePopularSampling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/rule_generator/examples_sampling/VariancePopularSampling.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/sparql/SparqlExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/sparql/SparqlExecutor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/asu/edu/rule_miner/rudik/views/index.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/asu/edu/rule_miner/rudik/views/index.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/scorePerEntity.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/scorePerEntity.ser" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,13 +36,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="ftl" value="104" />
+          <entry key="ftl" value="121" />
           <entry key="java" value="811" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="FTL" value="104" />
+          <entry key="FTL" value="121" />
           <entry key="JAVA" value="811" />
         </counts>
       </usages-collector>
@@ -62,7 +59,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/rule_generator/examples_sampling/VariancePopularSampling.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="109">
@@ -85,11 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/asu/edu/rule_miner/rudik/views/index.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="163" column="56" selection-start-line="163" selection-start-column="56" selection-end-line="163" selection-end-column="56" />
+            <state relative-caret-position="127">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
               <folding>
                 <element signature="e#10024#10031#1#HTML" expanded="true" />
               </folding>
@@ -189,7 +186,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="735" />
@@ -341,10 +338,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15938000" />
+    <option name="totallyTimeSpent" value="18723000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1452345" />
@@ -441,16 +438,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/asu/edu/rule_miner/rudik/views/index.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="163" column="56" selection-start-line="163" selection-start-column="56" selection-end-line="163" selection-end-column="56" />
-          <folding>
-            <element signature="e#10024#10031#1#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/rule_generator/examples_sampling/VariancePopularSampling.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="109">
@@ -468,6 +455,16 @@
             <element signature="e#7716#7732#0" expanded="true" />
             <element signature="e#7792#7808#0" expanded="true" />
             <element signature="e#10506#10514#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/asu/edu/rule_miner/rudik/views/index.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="e#10024#10031#1#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
