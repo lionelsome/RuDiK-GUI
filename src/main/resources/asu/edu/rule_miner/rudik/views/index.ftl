@@ -31,7 +31,7 @@
         });
 
     </script>
-<!-- Reload page when clicking browser back button so that the loader disappears -->
+<!-- Hide the loader page when clicking browser back button -->
     <script type="text/javascript">
     function reloadOnPreviousPageButton() {
         if (performance.navigation.type == 2) {
