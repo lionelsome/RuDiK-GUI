@@ -6,7 +6,7 @@ The following GUI is a <a href="https://www.dropwizard.io/1.3.5/docs/">Dropwizar
 
 ## Getting started
 These instructions will get you a copy of the project up and running on your local machine for testing purposes.
-Please note that some browsers like ```Mozilla Firefox``` and ```Microsoft Edge``` do not support the tools used to build the GUI. Therefore, to have a good experience with this verison of the GUI, please use ```Google Chrome```.
+Please note that some browsers like ```Mozilla Firefox``` and ```Microsoft Edge``` do not support the tools used to build the GUI. Therefore, to have a good experience with this version of the GUI, please use ```Google Chrome```.
 
 ### STEP 1: 
 Clone the git project: ```git clone https://github.com/lionelsome/RuDiK-GUI.git```;
@@ -30,7 +30,7 @@ In your web browser, go to ```localhost:9090/rudik``` and start the adventure wi
 ### Discover new rules : 
 It allows to run RuDiK against the selected knowledge base in order to find new rules related to the selected predicate.
 Select first the ```Type of rule``` and then the ```Knowledge Graph``` (KG). Depending on the KG, a list of predicates are suggested : you can either select one of them or enter another predicate that exists in the KG in ```Target predicate```(since no check is made on the correctness of the typed predicate, make sure it does exist).<br>
-In the ```More options```, select the ```Sparql endpoint``` you want to use based on your installation (wether you have Virtuoso installed or not) and the KG that you selected. There are other parameter that can be changed there. Please refer to github mentioned above for more details.<br>
+In the ```More options```, select the ```Sparql endpoint``` you want to use based on your installation (whether you have Virtuoso installed or not) and the KG that you selected. There are other parameters that can be changed there. Please refer to github mentioned above for more details.<br>
 Click on ```Run``` in the ```Main parameters``` card and wait for RuDiK to make the job. <br>
 You can see the Generation and Validation set (refer to the technical report for more details) of examples of each rule and also a Sankey diagram with all the rules and their corresponding Generation and validation Set. For each example, the ```Graph``` button allows to show a surrounding graph.
 This GUI also gives you the possibility to instantiate the discovered rules. 
