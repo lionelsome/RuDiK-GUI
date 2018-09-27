@@ -2,111 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bd22772-465d-41bf-8366-17fc23f4a8f2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/target/classes/assets/css/bootstrap-theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assets/css/bootstrap-theme.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assets/css/bootstrap-theme.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assets/css/bootstrap-theme.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assets/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assets/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assets/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assets/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assets/data/jsonGraph.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assets/data/test.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assets/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assets/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assets/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assets/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assets/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assets/images/Background_overlay.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assets/images/Logo_RuDiK.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assets/images/RuDiK_icon32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assets/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assets/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assets/js/npm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/RudikApplication$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/RudikApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/RudikConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/RuleMinerException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/api/RudikApi.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/api/RuleInstanceGeneration$Instantiate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/api/RuleInstanceGeneration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/api/SorroundingGraphGeneration$GraphGeneration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/api/SorroundingGraphGeneration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/api/model/HornRuleInstantiation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/api/model/HornRuleResult$RuleType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/api/model/HornRuleResult.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/api/model/RudikResult.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/configuration/Configuration.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/configuration/ConfigurationFacility.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/configuration/ConfigurationParameterConfigurator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/configuration/Constant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/model/horn_rule/HornRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/model/horn_rule/MultipleGraphHornRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/model/horn_rule/RuleAtom.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/model/rdf/graph/Edge.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/model/rdf/graph/Graph.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/model/statistic/StatisticsContainer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/predicate/analysis/KBPredicateSelector.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/predicate/analysis/SparqlKBPredicateSelector.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/rdf/parser/TurtleParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/resources/DiscoverRulesResource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/resources/IndexResource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/resources/InstantiateRuleResource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/rudikUI/DiscoverNewRules.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/rudikUI/UIMethods.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/rule_generator/DynamicPruningRuleDiscovery.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/rule_generator/HornRuleDiscovery.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/rule_generator/HornRuleDiscoveryInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/rule_generator/OneExampleRuleDiscovery.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/rule_generator/examples_sampling/VariancePopularSampling$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/rule_generator/examples_sampling/VariancePopularSampling.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/rule_generator/score/DynamicScoreComputation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/sparql/SparqlExecutor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/sparql/jena/QueryJenaLibrary.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/sparql/jena/filter/Filter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/sparql/jena/filter/TripleFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/sparql/jena/filter/TripleFilterFunctional.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/sparql/jena/remote/QuerySparqlRemoteEndpoint.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/sparql/jena/tbd/QueryJenaRDFAPI$OneThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/sparql/jena/tbd/QueryJenaRDFAPI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/views/DiscoverRulesView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/views/ExamplesView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/views/GraphView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/views/IndexView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/views/InstantiateRuleView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/views/SankeyDiagView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/views/examples.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/views/graph.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/views/index.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/views/instantiation.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/views/output.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/views/sankeyDiag.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/views/test.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asu/edu/rule_miner/rudik/views/vis_graph.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/input_examples/http___dbpedia_org_ontology_academicAdvisor_negative_generation.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/input_examples/http___dbpedia_org_ontology_academicAdvisor_negative_validation.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/input_examples/http___dbpedia_org_ontology_academicAdvisor_positive_generation.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/input_examples/http___dbpedia_org_ontology_academicAdvisor_positive_validation.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/input_examples/http___dbpedia_org_ontology_child_negative_generation.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/input_examples/http___dbpedia_org_ontology_child_negative_validation.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/input_examples/http___dbpedia_org_ontology_child_positive_generation.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/input_examples/http___dbpedia_org_ontology_child_positive_validation.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/input_examples/http___dbpedia_org_ontology_foundedBy_negative_generation.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/input_examples/http___dbpedia_org_ontology_foundedBy_negative_validation.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/input_examples/http___dbpedia_org_ontology_spouse_negative_generation.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/input_examples/http___dbpedia_org_ontology_spouse_negative_validation.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/input_examples/http___dbpedia_org_ontology_spouse_positive_generation.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/input_examples/http___dbpedia_org_ontology_spouse_positive_validation.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/asu/edu/rule_miner/rudik/ClientTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/asu/edu/rule_miner/rudik/api/RudikApiUsage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/asu/edu/rule_miner/rudik/dbpedia/DBPediaClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/asu/edu/rule_miner/rudik/dbpedia/all_relations.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/asu/edu/rule_miner/rudik/freebase/FreebaseClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/asu/edu/rule_miner/rudik/freebase/FreebaseUtility.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/asu/edu/rule_miner/rudik/model/HornRuleTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/asu/edu/rule_miner/rudik/predicate/analysis/SparqlKBPredicateSelectorTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/asu/edu/rule_miner/rudik/sparql/jena/remote/QuerySparqlRemoteEndpointTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/api/RudikApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/api/RudikApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/rule_generator/DynamicPruningRuleDiscovery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/rule_generator/DynamicPruningRuleDiscovery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/rule_generator/examples_sampling/VariancePopularSampling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/rule_generator/examples_sampling/VariancePopularSampling.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/sparql/SparqlExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/sparql/SparqlExecutor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/asu/edu/rule_miner/rudik/views/index.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/asu/edu/rule_miner/rudik/views/index.ftl" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -119,47 +20,88 @@
     <session id="-1186900408">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="5" />
+          <entry key="ftl" value="1" />
+          <entry key="java" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="5" />
+          <entry key="FTL" value="1" />
+          <entry key="JAVA" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="ftl" value="104" />
+          <entry key="java" value="811" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="FTL" value="104" />
+          <entry key="JAVA" value="811" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/rule_generator/DynamicPruningRuleDiscovery.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/rule_generator/examples_sampling/VariancePopularSampling.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2561">
-              <caret line="125" column="47" selection-start-column="57" selection-end-column="65" />
+            <state relative-caret-position="109">
+              <caret line="33" column="57" selection-start-line="33" selection-end-line="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/rule_generator/examples_sampling/VariancePopularSampling.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="109">
+              <caret line="317" column="156" selection-start-line="317" selection-start-column="152" selection-end-line="317" selection-end-column="156" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2176#2184#0" expanded="true" />
+                <element signature="e#2255#2281#0" expanded="true" />
+                <element signature="e#2341#2349#0" expanded="true" />
+                <element signature="e#2398#2406#0" expanded="true" />
+                <element signature="e#2652#2660#0" expanded="true" />
+                <element signature="e#6140#6156#0" expanded="true" />
+                <element signature="e#6783#6791#0" expanded="true" />
+                <element signature="e#7643#7659#0" expanded="true" />
+                <element signature="e#7716#7732#0" expanded="true" />
+                <element signature="e#7792#7808#0" expanded="true" />
+                <element signature="e#10506#10514#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/asu/edu/rule_miner/rudik/views/index.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="143">
+              <caret line="163" column="56" selection-start-line="163" selection-start-column="56" selection-end-line="163" selection-end-column="56" />
+              <folding>
+                <element signature="e#10024#10031#1#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/api/RudikApi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-763">
-              <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+            <state relative-caret-position="434">
+              <caret line="100" selection-start-line="100" selection-end-line="100" />
             </state>
           </provider>
         </entry>
@@ -167,7 +109,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/rudikUI/DiscoverNewRules.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-745">
+            <state relative-caret-position="1462">
               <caret line="103" column="24" selection-start-line="103" selection-start-column="24" selection-end-line="103" selection-end-column="24" />
             </state>
           </provider>
@@ -176,8 +118,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/resources/DiscoverRulesResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="82" column="53" selection-start-line="82" selection-start-column="53" selection-end-line="82" selection-end-column="53" />
+            <state relative-caret-position="-1547">
+              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/rule_generator/HornRuleDiscovery.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="179">
+              <caret line="168" column="79" selection-start-line="168" selection-start-column="79" selection-end-line="168" selection-end-column="79" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/sparql/jena/QueryJenaLibrary.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="215" column="64" selection-start-line="215" selection-start-column="64" selection-end-line="215" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/sparql/SparqlExecutor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="232" column="74" selection-start-line="232" selection-start-column="74" selection-end-line="232" selection-end-column="74" />
             </state>
           </provider>
         </entry>
@@ -188,10 +160,28 @@
     <findStrings>
       <find>sampling</find>
       <find>samp</find>
+      <find>generateGraph</find>
+      <find>graph</find>
+      <find>found a</find>
+      <find>computeEntityStats</find>
+      <find>toReturn</find>
+      <find>kg</find>
+      <find>topK</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/api/RudikApi.java" />
+        <option value="$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/rule_generator/DynamicPruningRuleDiscovery.java" />
+        <option value="$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/sparql/SparqlExecutor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/rule_generator/examples_sampling/VariancePopularSampling.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/asu/edu/rule_miner/rudik/views/index.ftl" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -211,8 +201,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -292,16 +280,26 @@
               <item name="rule_generator" type="462c0819:PsiDirectoryNode" />
               <item name="examples_sampling" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="rule_miner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RuDiK-GUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537965807199" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538057737939" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -338,46 +336,47 @@
       <option name="presentableId" value="Default" />
       <updated>1537964425406</updated>
       <workItem from="1537964430243" duration="1194000" />
+      <workItem from="1538035499951" duration="12214000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1194000" />
+    <option name="totallyTimeSpent" value="15938000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="Image Layers" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Capture Tool" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.120272316" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1452345" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Java Enterprise" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Messages" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.036065575" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.25737706" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.33442622" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Bean Validation" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.3295082" />
+      <window_info anchor="bottom" id="Java Enterprise" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -387,38 +386,89 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/rule_generator/DynamicPruningRuleDiscovery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/rule_generator/examples_sampling/VariancePopularSampling.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2561">
-          <caret line="125" column="47" selection-start-column="57" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/resources/DiscoverRulesResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="82" column="53" selection-start-line="82" selection-start-column="53" selection-end-line="82" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/rudikUI/DiscoverNewRules.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-745">
+        <state relative-caret-position="1462">
           <caret line="103" column="24" selection-start-line="103" selection-start-column="24" selection-end-line="103" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/rule_generator/HornRuleDiscovery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="168" column="79" selection-start-line="168" selection-start-column="79" selection-end-line="168" selection-end-column="79" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/api/RudikApi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-763">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        <state relative-caret-position="434">
+          <caret line="100" selection-start-line="100" selection-end-line="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/sparql/jena/QueryJenaLibrary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="215" column="64" selection-start-line="215" selection-start-column="64" selection-end-line="215" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/sparql/SparqlExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="232" column="74" selection-start-line="232" selection-start-column="74" selection-end-line="232" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/rule_generator/DynamicPruningRuleDiscovery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="33" column="57" selection-start-line="33" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/RuDiK-GUI/src/main/java/asu/edu/rule_miner/rudik/api/RudikApi.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/resources/DiscoverRulesResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1547">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/asu/edu/rule_miner/rudik/views/index.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="163" column="56" selection-start-line="163" selection-start-column="56" selection-end-line="163" selection-end-column="56" />
+          <folding>
+            <element signature="e#10024#10031#1#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/asu/edu/rule_miner/rudik/rule_generator/examples_sampling/VariancePopularSampling.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="317" column="156" selection-start-line="317" selection-start-column="152" selection-end-line="317" selection-end-column="156" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2176#2184#0" expanded="true" />
+            <element signature="e#2255#2281#0" expanded="true" />
+            <element signature="e#2341#2349#0" expanded="true" />
+            <element signature="e#2398#2406#0" expanded="true" />
+            <element signature="e#2652#2660#0" expanded="true" />
+            <element signature="e#6140#6156#0" expanded="true" />
+            <element signature="e#6783#6791#0" expanded="true" />
+            <element signature="e#7643#7659#0" expanded="true" />
+            <element signature="e#7716#7732#0" expanded="true" />
+            <element signature="e#7792#7808#0" expanded="true" />
+            <element signature="e#10506#10514#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -230,7 +230,7 @@ public abstract class SparqlExecutor {
 
     if (includeLimitation) {
       if (this.positiveExampleLimit >= 0) {
-        query.append(" ORDER BY RAND() LIMIT " + this.positiveExampleLimit);
+        query.append(" ORDER BY RAND() LIMIT " + this.positiveExampleLimit*2);
       }
     }
 

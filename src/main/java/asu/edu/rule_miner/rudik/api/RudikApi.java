@@ -97,24 +97,14 @@ public class RudikApi {
     final Set<String> relations = Sets.newHashSet(targetPredicate);
     final Set<Pair<String, String>> positiveEx = ruleDiscovery.generatePositiveExamples(relations, typeSubject,
         typeObject);
-    //generate the surrounding graph and take samples from the positive examples
-    List<String> posEntities= new ArrayList<String>();
-      for (final Pair<String, String> example : positiveEx) {
-          posEntities.add(example.getLeft());
-          posEntities.add(example.getRight());
-      }
-    final Graph<String> sorroundingGraph = generateGraph(posEntities);
-    final Set<Pair<String, String>> positiveExamples=sampling.sampleExamples(positiveEx,sorroundingGraph,nb_posEx);
+    // take samples from the positive examples
+
+    final Set<Pair<String, String>> positiveExamples=sampling.sampleExamples(positiveEx,nb_posEx);
     final Set<Pair<String, String>> negativeEx = ruleDiscovery.generateNegativeExamples(relations, typeSubject,
         typeObject);
-    //generate the surrounding graph and sample the negative examples
-      List<String> negEntities= new ArrayList<String>();
-      for (final Pair<String, String> example : negativeEx) {
-          negEntities.add(example.getLeft());
-          negEntities.add(example.getRight());
-      }
-      final Graph<String> surGraph = generateGraph(negEntities);
-      final Set<Pair<String, String>> negativeExamples=sampling.sampleExamples(negativeEx,surGraph,nb_negEx);
+    // sample the negative examples
+
+      final Set<Pair<String, String>> negativeExamples=sampling.sampleExamples(negativeEx,nb_negEx);
 
 
     Map<HornRule, Double> outputRules = null;

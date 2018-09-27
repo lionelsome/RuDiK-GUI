@@ -160,8 +160,8 @@
 " data-placement="top" title="The Knowledge Graph where to look for rules">Knowledge graph </label>
                 <div class="col-sm-5">
                     <select class="form-control" id="KG" name="kg" required>
-                        <option selected value="">Choose...</option>
-                        <option value="dbpedia">dbpedia</option>
+                        <option  value="">Choose...</option>
+                        <option value="dbpedia" selected>dbpedia</option>
                         <option value="yago">yago</option>
 
                     </select>
@@ -217,6 +217,18 @@
                                     <div class="input-group-text" data-toggle="tooltip" data-placement="top" title="A high α champions the recall by favoring rules covering more generation examples">&alpha;</div>
                                 </div>
                                 <input type="number" name="alpha" class="form-control" id="alpha" value="0.3" placeholder="0<=&alpha;<=1" step="0.1" min="0" max="1">
+                            </div>
+                        </div>
+
+                        <!--parameter: gamma -->
+
+                        <div class="col-sm-6">
+                            <label class="sr-only" for="gamma" >Gamma</label>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text" data-toggle="tooltip" data-placement="top" title="">&gamma;</div>
+                                </div>
+                                <input type="number" name="gamma" class="form-control" id="gamma" value="0.1" step="0.1" min="0" max="1">
                             </div>
                         </div>
 
@@ -330,6 +342,15 @@
                                 </div>
                             </div>
                         </fieldset>
+
+                        <!--parameter: gamma -->
+
+                        <div class="col-sm-6">
+                            <div class="input-group mb-2">
+                                <label for="sampling" >Sampling</label>
+                                <input type="checkbox" name="sampling" class="form-control" id="sampling" checked>
+                            </div>
+                        </div>
 
     </form>
     </div>
