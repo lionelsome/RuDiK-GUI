@@ -139,12 +139,14 @@ public class VariancePopularSampling {
 
 	public Set<Pair<String,String>> sampleExamples(Set<Pair<String,String>> allExamples, int genExamplesLimit) {
         LOGGER.info("Sampling the examples");
-		//retrieve the scorePerEntity file :a file containing some nodes their corresponding weight. This file is filled in while executing the code. Therefore it does not contain all the nodes
-		HashMap<String, Double> scorePerEntity = new HashMap<String, Double>();
+		//retrieve the statsPerEntity file :a file containing some nodes their corresponding weight. This file is filled in while executing the code. Therefore it does not contain all the nodes
+		HashMap<String, List<Double>> statsPerEntity = new HashMap<String, List<Double>>();
+		// a list of double containing the metrics for each entity. It will be added in statsPerEntity
+		List<Double> stats = new ArrayList<>();
 		try {
-			FileInputStream fileIn = new FileInputStream("src/main/resources/scorePerEntity.ser");
+			FileInputStream fileIn = new FileInputStream("src/main/resources/statsPerEntity.txt");
 			ObjectInputStream in = new ObjectInputStream(fileIn);
-			scorePerEntity =  (HashMap<String, Double>) in.readObject();
+			statsPerEntity =  (HashMap<String, List<Double>>) in.readObject();
 			in.close();
 			fileIn.close();
 		} catch (IOException i) {
@@ -158,10 +160,10 @@ public class VariancePopularSampling {
 		RudikApi API = new RudikApi();
 		List<String> entities= new ArrayList<String>();
 		for (final Pair<String, String> example : allExamples) {
-			if (!scorePerEntity.containsKey(example.getLeft())) {
+			if (!statsPerEntity.containsKey(example.getLeft())) {
 				entities.add(example.getLeft());
 			}
-			if (!scorePerEntity.containsKey(example.getRight())) {
+			if (!statsPerEntity.containsKey(example.getRight())) {
 				entities.add(example.getRight());
 			}
 		}
@@ -210,36 +212,55 @@ public class VariancePopularSampling {
 
 			double subScore, objScore, pairScore;
 
-			if (!scorePerEntity.containsKey(subject) && scorePerEntity.get(subject) == null) {
+			if (!statsPerEntity.containsKey(subject) && statsPerEntity.get(subject) == null) {
 				if (maxDiversity > 0)
 					diversity /= maxDiversity;
 				if (maxPopularity > 0)
 					popularity /= maxPopularity;
 				if (maxFunctionality > 0)
 					functionality /= maxFunctionality;
+				//add the metrics in stats list
+				stats.add(diversity);
+				stats.add(popularity);
+				stats.add(functionality);
 				subScore = alpha * diversity + beta * popularity + gamma * functionality;
-				scorePerEntity.put(subject, subScore);
-			} else
-				subScore = scorePerEntity.get(subject);
-
+				//add the entity and its metrics in statsPerEntity
+				statsPerEntity.put(subject, stats);
+			} else {
+			    //if the subject metrics are already in the file just retrieve them
+			    diversity=statsPerEntity.get(subject).get(0);
+			    popularity=statsPerEntity.get(subject).get(1);
+			    functionality=statsPerEntity.get(subject).get(2);
+                subScore = alpha * diversity + beta * popularity + gamma * functionality;
+            }
 		if (entities.contains(object)) {
 			diversity = diversityMap.get(object);
 			popularity = popularityMap.get(object);
 			functionality = functionalityMap.get(object);
+
 		}
 
-			if (!scorePerEntity.containsKey(object) && scorePerEntity.get(object) == null) {
+			if (!statsPerEntity.containsKey(object) && statsPerEntity.get(object) == null) {
 				if (maxDiversity > 0)
 					diversity /= maxDiversity;
 				if (maxPopularity > 0)
 					popularity /= maxPopularity;
 				if (maxFunctionality > 0)
 					functionality /= maxFunctionality;
+                //add the metrics in stats list
+                stats = new ArrayList<>();
+                stats.add(diversity);
+                stats.add(popularity);
+                stats.add(functionality);
 				objScore = alpha * diversity + beta * popularity + gamma * functionality;
-				scorePerEntity.put(object, objScore);
-			} else
-				objScore = scorePerEntity.get(object);
-
+				statsPerEntity.put(object, stats);
+			} else {
+                //if the subject metrics are already in the file just retrieve them
+                diversity=statsPerEntity.get(object).get(0);
+                popularity=statsPerEntity.get(object).get(1);
+                functionality=statsPerEntity.get(object).get(2);
+                objScore = alpha * diversity + beta * popularity + gamma * functionality;
+            }
 
 			pairScore = this.subWeight * subScore + this.objWeight * objScore;
 			scorePerPair.put(example, pairScore);
@@ -289,14 +310,14 @@ public class VariancePopularSampling {
 				keyNum++;
 			}
 		}
-//store scorePerEntity in a file
+//store statsPerEntity in a file
 		try {
-			FileOutputStream fileOut = new FileOutputStream("src/main/resources/scorePerEntity.ser");
+			FileOutputStream fileOut = new FileOutputStream("src/main/resources/statsPerEntity.txt");
 			ObjectOutputStream out = new ObjectOutputStream(fileOut);
-			out.writeObject(scorePerEntity);
+			out.writeObject(statsPerEntity);
 			out.close();
 			fileOut.close();
-            LOGGER.info("Serialized data is saved in src/main/resources/scorePerEntity.ser");
+            LOGGER.info("Serialized data is saved in src/main/resources/statsPerEntity.txt");
 		} catch (IOException i) {
 			i.printStackTrace();
 		}
