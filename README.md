@@ -45,6 +45,7 @@ Here, you can also have a surrounding graph for the literals involved in the ins
 
 * [Dropwizard](http://www.dropwizard.io/1.3.5/docs/) (1.3.5 or above) - The web framework used
 * [Maven](https://maven.apache.org/) (3.2 or above) - Dependency Management
+* Java 8 - More recent versions may not work
 
 ## Acknowledgments
 
